@@ -1,3 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--purple);
+  color: var(--white);
+}
+
+nav {
+  background-color: var(--black);
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px 20px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  body {
+    background: var(--orange);
+    color: var(--white);
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);
