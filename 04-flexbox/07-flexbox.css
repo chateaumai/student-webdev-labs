@@ -3,21 +3,200 @@
 }
 
 /* Flex Container 1 */
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 540px; /* 5 box + 4 gaps */
+}
+
+.flex-container-1 .flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+.flex-container-1 .item6 {
+  margin-left: 110px; 
+}
 
 /* Flex Container 2 */
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 540px; /* Total width for 5 items and 4 gaps */
+  justify-content: flex-end; /* Right justify the items */
+}
+
+.flex-container-2 .flex-item {
+  background-color: purple;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+.flex-container-2 .item1 { order: 5; }
+.flex-container-2 .item2 { order: 4; }
+.flex-container-2 .item3 { order: 3; }
+.flex-container-2 .item4 { order: 2; }
+.flex-container-2 .item5 { order: 1; }
+
+.flex-container-2 .item6 { order: 8; }
+.flex-container-2 .item7 { order: 7; }
+.flex-container-2 .item8 { order: 6; }
+
 
 /* Flex Container 3 */
 
 /* use height: 400px; on the container */
+.flex-container-3 {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
 
+.flex-container-3 .flex-item {
+  width: 80px;
+  height: 80px;
+  background-color: #800080;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+.flex-container-3 {
+  width: 200px;
+}
+
+.flex-container-3 .item1 { order: 4; }
+.flex-container-3 .item2 { order: 3; }
+.flex-container-3 .item3 { order: 2; }
+.flex-container-3 .item4 { order: 1; }
+
+.flex-container-3 .item5 { order: 8; }
+.flex-container-3 .item6 { order: 7; }
+.flex-container-3 .item7 { order: 6; }
+.flex-container-3 .item8 { order: 5; }
 /* Flex Container 4 */
+.flex-container-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 540px;
+}
+
+.flex-container-4 .top-row {
+  display: flex;
+  margin-left: 55px;
+  gap: 65px;
+  justify-content: flex-start;
+}
+
+.flex-container-4 .bottom-row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-container-4 .flex-item {
+  background-color: purple;
+  color: white;
+  width: 100px;  
+  height: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+.flex-container-4 .item1 { order: 1; }
+.flex-container-4 .item2 { order: 2; }
+.flex-container-4 .item3 { order: 3; }
+.flex-container-4 .item4 { order: 4; }
+.flex-container-4 .item5 { order: 5; }
+.flex-container-4 .item6 { order: 6; }
+.flex-container-4 .item7 { order: 7; }
+.flex-container-4 .item8 { order: 8; }
+
 
 /* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;  
+}
+
+.flex-container-5 .flex-item {
+  background-color: purple;
+  color: white;
+  width: 100px;  
+  height: 180px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  padding-top: 40px;  
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+/* tall ones */
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 240px;
+  padding-top: 60px;  
+}
+
+/* short ones */
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7 {
+  height: 130px;
+  padding-top: 30px;  
+}
 
 /* Flex Container 6 */
 
-.flex-container-6 .flex-item {
-  width: 400px;
+.flex-container-6 {
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
+  gap: 2px; 
+  padding: 2px;
+  width: 610px; 
 }
 
-/* use height: 300px; on the container */
+.flex-container-6 .flex-item {
+  background-color: purple;
+  color: white;
+  width: 200px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: sans-serif;
+}
